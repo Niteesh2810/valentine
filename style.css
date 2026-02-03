@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.playground {
+  position: relative;
+  width: 70vw;
+  height: 50vh;
+  margin: auto;
+  border-radius: 20px;
+}
+
+button {
+  position: absolute;
+  padding: 18px 45px;
+  font-size: 22px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+#yesBtn {
+  background: #ff4d6d;
+  color: white;
+  left: 35%;
+  top: 40%;
+}
+
+#noBtn {
+  background: white;
+  color: #ff4d6d;
+}
+
+#teaseText {
+  margin-top: 25px;
+  color: white;
+  font-size: 20px;
+  height: 30px;
+}
+
+/* ❤️ Hearts */
+.heart {
+  position: fixed;
+  top: -20px;
+  font-size: 24px;
+  animation: fall linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
